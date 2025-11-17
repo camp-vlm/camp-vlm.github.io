@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description"
+    content="Seeing is Believing (and Predicting): Context-Aware Multi-Human Behavior Prediction with Vision Language Models">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords"
+    content="Human Behavior Prediction, Large Language Model, Vision Language Model, Scene Graph, Artificial Intelligence, Fine-Tuning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Seeing is Believing (and Predicting): Context-Aware Multi-Human Behavior Prediction with Vision Language Models
+  </title>
+
+  <link rel="icon" type="image/x-icon" href="static/images/bosch_logo.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Seeing is Believing (and Predicting): Context-Aware Multi-Human
+              Behavior Prediction with Vision Language Models</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                Utsav Panchal</a><sup>1 †</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=dAfwuBQAAAAJ&hl=en" target="_blank">Yuchen
+                  Liu</a><sup>1 † *</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=L-3aQNcAAAAJ&hl=en" target="_blank">Luigi
+                  Palmieri</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=RN7G80gAAAAJ&hl=en" target="_blank">Ilche
+                  Georgievski</a><sup>1</sup></span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=XvRUyU4AAAAJ&hl=en" target="_blank">Marco
+                  Aiello</a><sup>1</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>University of Stuttgart,
+                <sup>2</sup>Bosch Research
+              </span>
+              <span class="eql-cntrb"><small><br><sup>†</sup>Equal Contribution, <sup>*</sup>Corresponding
+                  Author</small></span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="section" style="padding-top: 8px; margin-top: 0;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width has-text-centered">
+          <p>📢 <strong> Accepted at IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2026</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaser image-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/teaser_v2.png" alt="Cover fig" width="80%"
+          style="display: block; margin-left: auto; margin-right: auto;" class="subtitle has-text-centered">
+        <h2>
+          CAMP-VLM is a VLM-based framework for <strong>C</strong>ontext-<strong>A</strong>ware
+          <strong>M</strong>ulti-human behavior <strong>P</strong>rediction. Receiving an image sequence of past
+          observations from third-person views and a Scene Graph (SG) representing the environmental topologies
+          (excluding the textual action labels), the two-stage fine-tuning process helps CAMP-VLM to more accurately
+          predict multi-human behaviors.
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser image -->
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Accurately predicting human behaviors is crucial for mobile robots operating in human-populated
+              environments. While prior research primarily focuses on predicting actions in single-human scenarios from
+              an egocentric view, several robotic applications require understanding multiple human behaviors from a
+              third-person perspective.
+              To this end, we present CAMP-VLM (<strong>C</strong>ontext-<strong>A</strong>ware
+              <strong>M</strong>ulti-human <strong>P</strong>rediction): a Vision Language Model (VLM)-based framework
+              that incorporates contextual features from visual input and spatial awareness from scene graphs to enhance
+              prediction of humans-scene interactions. Due to the lack of suitable datasets for multi-human behavior
+              prediction from an observer view, we perform fine-tuning of CAMP-VLM with synthetic human behavior data
+              generated by a photorealistic simulator, and evaluate the resulting models on both synthetic and
+              real-world sequences to assess their generalization capabilities.
+              Leveraging Supervised Fine-Tuning (SFT) and Direct Preference Optimization (DPO), CAMP-VLM
+              outperforms the best-performing baseline by up to 66.9% in prediction accuracy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">System Architecture</h2>
+        <img src="static/images/system_overview.png" alt="System overview"
+          style="display: block; margin-left: auto; margin-right: auto;" class="blend-img-background center-image">
+        <p>
+          <br>An overview of CAMP-VLM, a VLM-centered framework for <strong>C</strong>ontext-<strong>A</strong>ware
+          <strong>M</strong>ulti-human <strong>P</strong>rediction. The video frames are processed by the vision encoder
+          into visual tokens, which are then passed into the Large Language Model (LLM) backbone via the projection
+          layer. The context encoded in the images helps the VLM to discern interactions between humans and the scene.
+          The scene knowledge encoded in the Scene Graph (SG) is provided to ground the predictions in the provided
+          scene topologies and relationships. Under the guidance of the user-provided prompt, the LLM predicts human
+          behaviors in the given format. The LLM is fine-tuned to improve the prediction performance, while the weights
+          of the vision encoder and projection layer remain unchanged.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Hypotheses -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">2-Stage Fine-Tuning Process</h2>
+        <img src="static/images/training.png" alt="Training process" width="80%"
+          style="display: block; margin-left: auto; margin-right: auto;" class="blend-img-background center-image">
+        <p>
+          <br>We introduce a two-stage fine-tuning process combining Supervised Fine-Tuning (SFT) and Direct Preference
+          Optimization (DPO) to improve the prediction performance of pre-trained VLMs.
+        </p>
+        <p>
+          <strong>Stage 1 (SFT):</strong> A dataset consisting of ground truth input-output pairs
+          (<b>x</b><sub>i</sub>, <b>y</b><sub>i</sub>) is to be prepared for the SFT process, as shown in the
+          top-left part of the figure above. Each input <b>x</b><sub>i</sub> comprises a sequence of video frames, a
+          scene graph, and a prediction prompt as described previously, while the output
+          <b>y</b><sub>i</sub> refers to the ground truth behavior labels. In this work, we employ Low-Rank Adaptation
+          (LoRA) to the open-source pre-trained VLMs.
+        </p>
+        <p>
+          <strong>Stage 2 (DPO):</strong> While SFT provides strong task grounding, its gains are limited by dataset
+          size. Although DPO is often used for human preference alignment, here it is used to bias the VLM toward
+          predictions with smaller character-level deviations, improving performance without enlarging the dataset.
+          <br>For DPO, a preference dataset is necessary. While the inputs <b>x</b><sub>i</sub> remain the same as
+          in the SFT dataset, DPO requires additional chosen and rejected predicted labels,
+          <b>y</b><sub>i</sub><sup>w</sup>
+          and <b>y</b><sub>i</sub><sup>l</sup>, as shown in the top-right part of the figure above.
+          To collect preference data, the fine-tuned reference model from the last stage is inferred to generate a batch
+          of outputs and construct an SFT response collection. Using a pre-defined similarity metric such as Edit
+          Distance (ED), a preferred and a non-preferred response are selected according to the lowest and highest ED
+          values, respectively.
+          The model is then trained by minimizing a loss function derived from the KL-constrained reward maximization
+          objective used in RLHF but reformulated to directly optimize the policy.
+        </p>
+        <br>
+        <p>
+          The prompt is formulated as follows:
+        </p>
+        <img src="static/images/prompt.png" alt="Prompt" width="50%"
+          style="display: block; margin-left: auto; margin-right: auto;" class="blend-img-background center-image">
+      </div>
+    </div>
+  </section>
+  <!-- End Hypotheses -->
+
+
+  <!-- Prediction Examples -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">Data Collection</h2>
+        <div class="level-set has-text-justified">
+          <img src="static/images/scene_exp.png" alt="Scenes" width="100%"
+            style="display: block; margin-left: auto; margin-right: auto;" class="blend-img-background center-image">
+          <br>
+          <p>
+            Example scenes of the datasets. From left to right: kitchen, living room, bedroom from VirtualHome
+            simulation, and office kitchen and living room in the real-world video recordings.
+          </p>
+          <br>
+          <img src="static/images/dataset.png" alt="Dataset" width="50%"
+            style="display: block; margin-left: auto; margin-right: auto;" class="blend-img-background center-image">
+          <p>
+            Statistics of the datasets. The rooms cover <strong>K</strong>(itchen), <strong>B</strong>(bedroom), and
+            <strong>L</strong>(iving room). Duration and the number of Actions per human are averaged through all
+            videos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Prediction Examples -->
+
+
+  <!-- Results -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container  is-max-desktop">
+        <h2 class="title is-3">Results</h2>
+        <div class="level-set has-text-justified">
+          <img src="static/images/result_all.png" alt="result_all" width="50%"
+            style="display: block; margin-left: auto; margin-right: auto;" class="blend-img-background center-image">
+          <p>
+            Results of all models in multi-human scenarios across all synthetic <strong>K</strong>(itchen),
+            <strong>B</strong>(bedroom), and <strong>L</strong>(iving room) scenes. Higher values of accuracy and Cosine
+            Similarity (CS) and lower values of Edit Distance (ED) indicate better performance. Bold numbers are the
+            best results in each sub-category.
+          </p>
+          <br>
+          <img src="static/images/result_baseline.png" alt="result_baseline" width="50%"
+            style="display: block; margin-left: auto; margin-right: auto;" class="blend-img-background center-image">
+          <p>
+            Results of CAMP-VLM and CAP in <strong>real-world</strong> multi-human scenarios in
+            <strong>K</strong>(itchen) and <strong>L</strong>(iving room). Results of AntGPT are not listed due to low
+            performance.
+          </p>
+          <br>
+          <img src="static/images/result_sft.png" alt="result_sft" width="50%"
+            style="display: block; margin-left: auto; margin-right: auto;" class="blend-img-background center-image">
+          <p>
+            Performance of CAMP-VLM with different fine-tuning strategies and VLM variants in kitchen (syn.) with 3
+            humans.
+          </p>
+          <br>
+          <img src="static/images/result_humans.png" alt="result_humans" width="50%"
+            style="display: block; margin-left: auto; margin-right: auto;" class="blend-img-background center-image">
+          <p>
+            Performance of CAMP-VLM with increasing number of humans. The values are averaged across all room types.
+          </p>
+          <br>
+          <img src="static/images/result_sg.png" alt="result_sg" width="50%"
+            style="display: block; margin-left: auto; margin-right: auto;" class="blend-img-background center-image">
+          <p>
+            Comparison of performance with and without scene graphs using pretrained GPT-4o in kitchen (syn.) with 3
+            humans.
+          </p>
+          <br>
+          <img src="static/images/result_syn_real.png" alt="result_syn_real" width="50%"
+            style="display: block; margin-left: auto; margin-right: auto;" class="blend-img-background center-image">
+          <p>
+            Comparison of prediction performance of CAMP-VLM between synthetic and real-world scenes. The values are
+            averaged across all room types in 2 and 3 humans scenarios.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Results -->
+
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+  @article{panchal2025seeing,
+    title={Seeing is Believing (and Predicting): Context-Aware Multi-Human Behavior Prediction with Vision Language Models},
+    author={Panchal, Utsav and Liu, Yuchen and Palmieri, Luigi and Georgievski, Ilche and Aiello, Marco},
+    journal={},
+    year={2025}
+  }
+      </code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This is a private page, opinions are my own, results have been obtained during my PhD research. Yuchen
+              Liu.<br>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
