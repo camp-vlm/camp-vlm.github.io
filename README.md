@@ -1,6 +1,6 @@
 # Seeing is Believing (and Predicting): Context-Aware Multi-Human Behavior Prediction with Vision Language Models
 
-This is the project page of the paper [Seeing is Believing (and Predicting): Context-Aware Multi-Human Behavior Prediction with Vision Language Models]().
+This is the project page of the paper [Seeing is Believing (and Predicting): Context-Aware Multi-Human Behavior Prediction with Vision Language Models](https://arxiv.org/abs/2512.15957).
 
 📢 The paper is accepted at IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2026.
 
